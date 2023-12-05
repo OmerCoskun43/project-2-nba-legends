@@ -1,0 +1,104 @@
+@import url("https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap");
+
+body {
+  background-color: #bbe4e9;
+  font-family: "Indie Flower", cursive;
+}
+
+.header_nba {
+  background-color: #53a8b6;
+}
+
+.header_nba_h {
+  color: red;
+  font-weight: bold;
+  animation: headerOn 1.3s ease infinite;
+}
+
+@keyframes headerOn {
+  from {
+    /* text-shadow: -3px 3px 5px red; */
+  }
+
+  to {
+    text-shadow: -3px 3px 5px yellow;
+  }
+}
+
+/* .cardContainer_input {
+  outline: yellow;
+} */
+
+.form-control:focus {
+  border-color: red;
+  box-shadow: 0 0 0 0.2rem rgba(250, 0, 0, 0.55);
+}
+
+.playerCard {
+  margin-top: 0.5rem;
+}
+
+.playerCard_div {
+  overflow: hidden;
+  border-radius: 1rem;
+  box-shadow: -3px 5px 10px 5px rgba(10, 50, 255, 0.8);
+  background-color: yellow;
+}
+
+.playerCard_div:hover .playerCard_img {
+  transform: scale(0.8);
+  border-radius: 1rem;
+  box-shadow: -3px 5px 10px 5px rgba(255, 0, 0, 1);
+}
+
+.playerCard_img {
+  width: 270px;
+  height: 300px;
+  border-radius: 1rem;
+  transition: all 0.6s;
+}
+
+.playerCard_div h3 {
+  background-color: yellow;
+  border-bottom-left-radius: 1rem;
+  border-bottom-right-radius: 1rem;
+  text-align: center;
+  padding: 0.5rem;
+  font-weight: bold;
+  color: magenta;
+}
+
+.card-cont {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+  padding: 2rem;
+}
+
+.ul-cont {
+  border-radius: 1rem;
+  box-shadow: -3px 5px 10px 5px rgba(10, 50, 255, 0.8);
+  background-color: #53a8b6;
+  width: 270px;
+  height: 358px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  align-content: center;
+  padding: 2.5rem;
+}
+
+ul li {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: rgb(2, 27, 51);
+  text-align: start;
+}
+
+.input-search {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
